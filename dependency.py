@@ -1,5 +1,4 @@
 from typing import Type, TypeVar, Dict, Callable
-from app.config import Settings
 T = TypeVar("T")
 
 class Injector:
@@ -21,9 +20,6 @@ class Injector:
 
     def __getitem__(self, type_: Type[T]) -> Callable[[], T]:
         return lambda: self.get(type_)
-
-def get_settings():
-    return Settings()
 
 
 injector = Injector()
