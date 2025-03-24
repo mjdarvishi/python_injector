@@ -12,16 +12,16 @@ This is a simple Python dependency injection library that provides an easy way t
 To install this package, clone the repository and install the dependencies:
 
 ```bash
-git clone <repository_url>
-cd <repository_name>
+git clone https://github.com/mjdarvishi/python_injector
+cd python_injector
 pip install .
 
 ```
 
-Alternatively, you can also install it directly from GitHub:
+Alternatively, you can also install it directly:
 
 ```bash
-pip install git+https://github.com/<username>/<repository_name>.git
+pip install python-injector
 ```
 Usage
 Registering Dependencies
